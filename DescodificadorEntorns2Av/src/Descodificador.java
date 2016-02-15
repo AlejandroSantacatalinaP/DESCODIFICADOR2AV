@@ -8,13 +8,13 @@ public class Descodificador {
 
 		public static void main(String[] args){	
 
-			mensajeDescodificado=mensaje.toLowerCase();
+			mensajeDescodificado=mensaje.toLowerCase(); //Ponemos la frase en minúscula
 			
 			for(int i=0;i<mensaje.length()-1;i+=2){   //Este for recorre de dos en dos el string mensaje.
 
 				temporal=temporal+mensajeDescodificado.charAt(i+1)+mensajeDescodificado.charAt(i);
 				
-				if(i+3==mensajeDescodificado.length()){
+				if(i+3==mensajeDescodificado.length()){ //Cuando casi llega al final pone la última letra
 					temporal=temporal+mensajeDescodificado.charAt(i+2);
 				
 				}
